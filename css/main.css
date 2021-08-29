@@ -627,7 +627,8 @@ header {
   .header-categories_mini .header-categories__title {
     text-transform: none;
     font-family: 'RobotoRegular', sans-serif;
-    left: 15px; }
+    left: 15px;
+    font-size: 15px; }
     @media screen and (max-width: 1200px) and (min-width: 768px) {
       .header-categories_mini .header-categories__title {
         font-size: 14px;
@@ -1619,6 +1620,8 @@ section {
         -webkit-transform: translateY(2px);
             -ms-transform: translateY(2px);
                 transform: translateY(2px); }
+    .section__head-link_mobile {
+      display: none; }
     @media screen and (max-width: 767px) {
       .section__head-link {
         display: none; }
