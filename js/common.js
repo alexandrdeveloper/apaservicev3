@@ -62,17 +62,18 @@ $(document).ready(function() {
 	});
 
 
-	$('.banner-image').slick({
+	$('.b-banner-bg').slick({
 		slidesToShow: 1,
-		asNavFor: $('.banner-text__carousel'),
+		asNavFor: $('.b-banner-content'),
+		fade: true,
 	});
-	$('.banner-text__carousel').slick({
+	$('.b-banner-content').slick({
 		autoplay: true,
 		autoplaySpeed: 3000,
 		slidesToShow: 1,
 		arrows: false,
 		fade: true,
-		asNavFor: $('.banner-image'),
+		asNavFor: $('.b-banner-bg'),
 	});
 
 	$('.certificate__link').magnificPopup({
@@ -230,6 +231,52 @@ $(document).ready(function() {
 			catWin.classList.remove('b-submenu_visible');
 		}
 	});
+
+	let mobileLogo = document.querySelector('.logo');
+	let winPos = window.pageYOffset;
+
+	document.addEventListener('scroll', function() {
+		let winPos = window.pageYOffset;
+		if (winPos > 10) {
+			mobileLogo.classList.add('logo_scrolled');
+		} else {
+			mobileLogo.classList.remove('logo_scrolled');
+		}
+
+	});
+
+
+	let callFormWin = document.querySelector('.b-modal_call');
+	let formCloseBtn = document.querySelector('.b-modal__close');
+
+	
+
+	for (const modalInit of document.querySelectorAll(".b-call-form-init")) {
+        modalInit.addEventListener('click', function(e) {
+			e.preventDefault();
+			let title = this.getAttribute('modalTitle');
+			let btn = this.getAttribute('modalBtn');
+			console.log(title, btn);
+	
+			let modal = callFormWin;
+			let modalTitle = callFormWin.querySelector('.b-modal__title');
+			let modalBtn = callFormWin.querySelector('.b-modal__submit');
+	
+			
+	
+			modalTitle.innerText = title;
+			modalBtn.innerText = btn;
+			callFormWin.classList.add('b-modal_visible');
+		});
+        
+    }
+
+	formCloseBtn.addEventListener('click', function(e) {
+		e.preventDefault();
+		callFormWin.classList.remove('b-modal_visible');
+	});
+
+	
 
 	
 	
