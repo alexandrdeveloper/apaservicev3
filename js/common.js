@@ -46,8 +46,8 @@ $(document).ready(function() {
 		priceModal.removeClass('price-modal_active');	
 	});
 
-	$('.certificate__carousel').slick({
-		slidesToShow: 3,
+	$('.certificate__carousel2').slick({
+		slidesToShow: 4,
 		responsive: [{
 			breakpoint: 767,
 			settings: {
