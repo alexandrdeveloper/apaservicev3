@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="private">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Услуги</title>	
+	<!--<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/libs.min.css">		
+	<link rel="stylesheet" href="css/main.css">	
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<header class="b-header">
+            <div class="b-navbar">
+                <div class="b-navbar-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="b-navbar-top__row">
+                                    <div class="b-navbar-top__left">
+                                        <a href="index.html" class="logo">
+                                            <img src="img/new-header/logo.svg" alt="АПА-СЕРВИС">
+                                        </a>
+                                        <!-- /.logo -->
+                                        <button class="b-navbar-burger">
+                                            <span></span><span></span><span></span>
+                                        </button>
+                                        <!-- /.b-navbar-burger -->
+                                    </div>
+                                    <!-- /.b-navbar-top__left -->
+                                    
+                                    <div class="b-navbar-top__nav">
+                                        <div class="b-navbar-social">
+                                            <a href="mailto:office@apa-service.ru?subject=%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%BE%D1%81%D1%87%D0%B5%D1%82%20%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8%20%D1%83%D0%B1%D0%BE%D1%80%D0%BA%D0%B8" class="b-navbar-social__link">
+                                                <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M27.3632 0.499924H2.63672C1.1799 0.499924 0 1.90481 0 3.62004V22.3408C0 24.0661 1.18857 25.4609 2.63672 25.4609H27.3632C28.8079 25.4609 30 24.0721 30 22.3408V3.62004C30 1.90786 28.8248 0.499924 27.3632 0.499924ZM26.9941 2.58001C26.4554 3.21407 17.1845 14.1267 16.8645 14.5035C16.3663 15.0929 15.7044 15.4173 15 15.4173C14.2956 15.4173 13.6336 15.0928 13.1339 14.5016C12.9186 14.2481 3.75017 3.45599 3.00597 2.58001H26.9941ZM1.75782 21.9174V4.04472L9.35379 12.9859L1.75782 21.9174ZM3.00708 23.3808L10.6001 14.4529L11.8926 15.9743C12.7226 16.9565 13.8262 17.4974 15 17.4974C16.1738 17.4974 17.2773 16.9565 18.1058 15.9763L19.3999 14.4529L26.993 23.3808H3.00708ZM28.2423 21.9174L20.6462 12.9859L28.2423 4.04472V21.9174Z" fill="#02ADCC"/>
+                                                </svg>
+                                            </a>
+                                            <a href="https://wa.me/79872250955" class="b-navbar-social__link">
+                                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.8437 0.0225063C14.7425 0.0300063 14.42 0.0637563 14.1312 0.0937563C8.36372 0.720006 3.46249 4.725 1.72248 10.2375C1.41498 11.22 1.23123 12.1087 1.11498 13.2C1.03998 13.9313 1.05873 15.7537 1.15248 16.425C1.42623 18.4051 2.04123 20.2349 2.96749 21.8362L3.15498 22.1626L1.83123 26.0739C1.10373 28.2226 0.51123 29.9849 0.51123 29.9888C0.51498 29.9926 2.34498 29.4149 4.57998 28.7026L8.64123 27.4126L9.20749 27.6938C10.8425 28.5039 12.6725 29.0139 14.5062 29.1713C15.47 29.2575 16.8537 29.2162 17.8437 29.0813C23.3825 28.3088 28.0251 24.4426 29.7687 19.1439C30.0987 18.1537 30.3051 17.19 30.4287 16.0875C30.5038 15.4275 30.4962 13.6463 30.41 12.9937C30.2151 11.4525 29.8774 10.185 29.3187 8.88374C28.6062 7.22251 27.6351 5.775 26.3374 4.45125C23.9413 1.99874 20.9038 0.510006 17.45 0.0937563C16.9662 0.0375063 15.2637 -0.0112439 14.8437 0.0225063ZM17.255 2.41874C18.7625 2.61 20.0413 2.99625 21.3538 3.65625C22.5538 4.25625 23.5551 4.98 24.5225 5.94374C26.4462 7.86 27.6087 10.1587 28.0325 12.8813C28.13 13.5113 28.1674 15.0863 28.1 15.735C27.89 17.7975 27.2451 19.6313 26.15 21.2962C25.6325 22.0762 25.25 22.5449 24.5413 23.2539C23.8251 23.9662 23.3974 24.3188 22.6025 24.8475C21.0762 25.8639 19.2874 26.5313 17.4087 26.7939C16.8125 26.8762 15.3387 26.91 14.7087 26.8539C12.7925 26.6775 10.9587 26.0849 9.40623 25.14C9.18123 25.0049 8.96749 24.8926 8.93372 24.8926C8.89998 24.8926 7.83123 25.2262 6.55998 25.6313C5.28498 26.0362 4.23872 26.3626 4.22749 26.3549C4.21998 26.3475 4.56123 25.3239 4.98123 24.0826L5.74998 21.8213L5.54749 21.5326C3.37249 18.4013 2.80249 14.3137 4.04372 10.695C4.68872 8.80874 5.67872 7.25625 7.14123 5.83125C9.22623 3.80625 11.7875 2.64374 14.7875 2.36251C15.29 2.31751 16.7075 2.34751 17.255 2.41874Z" fill="#02ADCC"/>
+                                                    <path d="M10.4487 8.00187C10.2124 8.08062 10.0662 8.18187 9.77741 8.48187C8.96366 9.32187 8.59991 10.2106 8.59991 11.3469C8.59991 12.2656 8.92241 13.2856 9.54117 14.3056C9.79241 14.7219 10.6362 15.9069 11.0187 16.3869C12.3874 18.0894 13.9587 19.4093 15.5299 20.1781C16.3137 20.5606 18.2562 21.2506 19.0061 21.4119C19.6286 21.5468 20.2099 21.5093 20.9337 21.2919C21.7212 21.0555 22.6625 20.3619 22.9248 19.8219C23.1125 19.4393 23.2325 18.9068 23.2399 18.4155L23.2437 17.9919L23.1237 17.8906C23.0037 17.7931 21.0161 16.8181 20.2999 16.5069C20.0599 16.4019 19.8312 16.3306 19.7074 16.3194C19.5161 16.3044 19.5086 16.3081 19.3512 16.4656C19.2648 16.5594 19.0474 16.8181 18.8712 17.0431C18.1399 17.9731 17.9224 18.1868 17.7012 18.1868C17.4762 18.1868 16.1674 17.5606 15.5637 17.1669C14.5699 16.5106 13.8462 15.8281 13.1037 14.8494C12.6237 14.2119 12.3424 13.7506 12.3237 13.5631C12.3012 13.3756 12.3162 13.3569 12.8487 12.7419C13.2799 12.2506 13.5124 11.8381 13.5124 11.5719C13.5124 11.4781 13.4712 11.3169 13.4149 11.1894C13.3624 11.0656 13.0812 10.4019 12.7924 9.71187C12.2224 8.33562 12.1437 8.18187 11.9674 8.05811C11.8587 7.97936 11.8024 7.97187 11.2287 7.96062C10.7824 7.95311 10.5612 7.96436 10.4487 8.00187Z" fill="#02ADCC"/>
+                                                </svg>
+                                                                                                                                                   
+                                            </a>
+                                            <a href="https://msng.link/o/?@APAService_bot=tg" class="b-navbar-social__link">
+                                                <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M29.4965 0.90276C29.1311 0.450827 28.5838 0.202011 27.9552 0.202011C27.6135 0.202011 27.2515 0.274717 26.8795 0.418514L1.55529 10.1941C0.211368 10.7128 0.0303667 11.4911 0.0420074 11.9088C0.053648 12.3266 0.278017 13.0934 1.64888 13.5345C1.65709 13.537 1.6653 13.5395 1.67353 13.5418L6.92643 15.062L9.76722 23.2767C10.1546 24.3966 11.0239 25.0921 12.0365 25.0921C12.6749 25.0921 13.3028 24.8217 13.8524 24.3102L17.1015 21.285L21.8142 25.1222C21.8146 25.1226 21.8154 25.1229 21.8158 25.1233L21.8605 25.1599C21.8646 25.1631 21.8689 25.1665 21.8731 25.1697C22.3969 25.5806 22.9686 25.7975 23.5272 25.7978H23.5274C24.6186 25.7978 25.4876 24.9809 25.7408 23.717L29.8901 2.99831C30.0566 2.1667 29.9169 1.42255 29.4965 0.90276ZM8.68372 14.7732L18.8182 9.53771L12.5078 16.3184C12.4044 16.4293 12.3311 16.5653 12.2951 16.7132L11.0783 21.6974L8.68372 14.7732ZM12.6648 23.0061C12.6228 23.0451 12.5806 23.0799 12.5384 23.112L13.6673 18.4883L15.7208 20.1606L12.6648 23.0061ZM28.1721 2.64633L24.0226 23.3652C23.9828 23.5636 23.8552 24.0249 23.5272 24.0249C23.3651 24.0249 23.1615 23.9356 22.9531 23.7733L17.6131 19.4253C17.6124 19.4246 17.6114 19.4239 17.6105 19.4234L14.4331 16.836L23.5586 7.03038C23.8508 6.71648 23.8774 6.23569 23.6215 5.89086C23.3654 5.54603 22.9014 5.43754 22.5218 5.63374L7.51258 13.3877L2.18823 11.8472L27.5046 2.0746C27.7185 1.99197 27.8678 1.97465 27.9552 1.97465C28.0088 1.97465 28.1042 1.98112 28.1396 2.0252C28.1862 2.08268 28.2455 2.27864 28.1721 2.64633Z" fill="#02ADCC"/>
+                                                </svg>
+                                                                                                                                                   
+                                            </a>
+                                        </div>
+                                        <!-- /.b-navbar-social -->
+                                        <div class="b-navbar-contacts">
+                                            <div class="b-navbar-contacts__tel">
+                                                <a href="tel:+78432023947" class="head-contacts__phone-num"><span>+7 (843)</span> 202-39-47</a>
+                                                <span class="b-navbar-online">Офис сейчас открыт</span>
+                                                <!-- /.b-navbar-tel -->
+                                            </div>
+                                            <!-- /.b-navbar-contacts__tel -->
+                                            <button class="b-navbar-btn b-call-form-init" modalTitle="Обратный звонок" modalBtn="Перезвоните мне">
+                                                Оставить заявку
+                                            </button>
+                                            <!-- /.b-navbar-btn -->
+                                        </div>
+                                        <!-- /.b-navbar-contacts -->
+                                    </div>
+                                    <!-- /.b-navbar-top__nav -->
+                                    
+                                </div>
+                                <!-- /.b-navbar-top__row -->
+                                
+                            </div>
+                            <!-- /.col-sm-12 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container -->
+                </div>
+                <!-- /.b-navbar-top -->
+                <div class="b-menu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="b-menu__row">
+                                    <ul class="b-menu__list">
+                                        <li class="b-menu__item">
+                                            <a href="#" class="b-menu-cat">
+                                                <div class="b-menu-cat__burger">
+                                                    <span></span><span></span><span></span>
+                                                </div>
+                                                <span>УСЛУГИ</span> 
+                                            </a>
+                                                                                       
+                                        </li>                                        
+                                    
+                                        <li class="b-menu__item"><a href="index.html">отзывы</a></li>
+                                    
+                                        <li class="b-menu__item"><a href="#">Наш блог</a></li>
+                                    
+                                        <li class="b-menu__item"><a href="#">Цены</a></li>
+                                    
+                                        <li class="b-menu__item"><a href="#">Контакты</a></li>
+                                    </ul>
+                                    <!-- /.b-menu__list -->
+                                    
+                                </div>
+                                <!-- /.b-menu__row -->
+                            </div>
+                            <!-- /.col-sm-12 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container -->
+                </div>
+                <!-- /.b-menu -->
+                <div class="b-submenu">
+                    <div class="container">
+                        <div class=" row b-submenu__wrap">
+                            <div class="col-lg-3 col-md-6 b-submenu__col">
+                                <div class="b-submenu__box">
+                                    <a href="#" class="b-submenu__header">
+                                        <div class="b-submenu__icon">
+                                            <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M47.2631 1.50012C47.328 1.50012 47.4684 1.53352 47.6284 1.75025C47.7882 1.96677 47.9172 2.31361 47.9172 2.74053V46.2597C47.9172 46.6866 47.7882 47.0335 47.6284 47.25C47.4684 47.4667 47.328 47.5001 47.2631 47.5001H2.57229C2.50722 47.5001 2.36655 47.4666 2.20634 47.2497C2.04635 47.0331 1.91724 46.6864 1.91724 46.2597V2.74053C1.91724 2.31389 2.04635 1.96712 2.20634 1.75054C2.36655 1.53366 2.50723 1.50012 2.57229 1.50012H47.2631Z" stroke="#353535" stroke-width="2"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1723 18.2026C12.3814 18.2026 14.1719 16.4117 14.1719 14.2022C14.1719 11.9936 12.3814 10.2026 10.1723 10.2026C7.96313 10.2026 6.17188 11.9936 6.17188 14.2022C6.17188 16.4117 7.96313 18.2026 10.1723 18.2026Z" fill="#353535"/>
+                                                <path d="M4.09253 47.2322L20.8938 23.105L27.8402 32.6605L36.7744 18.3386L47.897 34.8278" stroke="#353535" stroke-width="2"/>
+                                            </svg>
+                                                
+                                        </div>
+                                        <!-- /.b-submenu__icon -->
+                                        <span class="b-submenu__col-title">Услуги клининга</span>
+                                        <!-- /.b-submenu__col-title -->
+                                    </a>
+                                    <!-- /.b-submenu__header -->
+                                    <ul class="b-submenu-list">
+                                        <li class="b-submenu-list__item"><a href="index.html">Уборка квартир</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Уборка коттейджей, домов</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Генеральная уборка квартиры</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Уборка санузла, ванной комнаты</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Мытье окон</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Мытье окон балконов, лоджий</a></li>
+                                    </ul>
+                                    <!-- /.b-submenu-list -->
+                                </div>
+                                <!-- /.b-submenu__box -->
+                            </div>
+                            <!-- /.col-md-3 col-sm-6 b-submenu__col -->
+
+                            <div class="col-lg-3 col-md-6 b-submenu__col">
+                                <div class="b-submenu__box">
+                                    <a href="#" class="b-submenu__header">
+                                        <div class="b-submenu__icon">
+                                            <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M47.2631 1.50012C47.328 1.50012 47.4684 1.53352 47.6284 1.75025C47.7882 1.96677 47.9172 2.31361 47.9172 2.74053V46.2597C47.9172 46.6866 47.7882 47.0335 47.6284 47.25C47.4684 47.4667 47.328 47.5001 47.2631 47.5001H2.57229C2.50722 47.5001 2.36655 47.4666 2.20634 47.2497C2.04635 47.0331 1.91724 46.6864 1.91724 46.2597V2.74053C1.91724 2.31389 2.04635 1.96712 2.20634 1.75054C2.36655 1.53366 2.50723 1.50012 2.57229 1.50012H47.2631Z" stroke="#353535" stroke-width="2"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1723 18.2026C12.3814 18.2026 14.1719 16.4117 14.1719 14.2022C14.1719 11.9936 12.3814 10.2026 10.1723 10.2026C7.96313 10.2026 6.17188 11.9936 6.17188 14.2022C6.17188 16.4117 7.96313 18.2026 10.1723 18.2026Z" fill="#353535"/>
+                                                <path d="M4.09253 47.2322L20.8938 23.105L27.8402 32.6605L36.7744 18.3386L47.897 34.8278" stroke="#353535" stroke-width="2"/>
+                                            </svg>
+                                                
+                                        </div>
+                                        <!-- /.b-submenu__icon -->
+                                        <span class="b-submenu__col-title">Уборка после ремонта</span>
+                                        <!-- /.b-submenu__col-title -->
+                                    </a>
+                                    <!-- /.b-submenu__header -->
+                                    <ul class="b-submenu-list">
+                                        <li class="b-submenu-list__item"><a href="#">Уборка квартиры после ремонта</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Уборка дома после ремонта</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Уборка помещений после ремонта в Казани</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Уборка коттеджей после ремонта в Казани</a></li>
+                                    
+                                    </ul>
+                                    <!-- /.b-submenu-list -->
+                                </div>
+                                <!-- /.b-submenu__box -->
+                            </div>
+                            <!-- /.col-md-3 col-sm-6 b-submenu__col -->
+
+                            <div class="col-lg-3 col-md-6 b-submenu__col">
+                                <div class="b-submenu__box">
+                                    <a href="#" class="b-submenu__header">
+                                        <div class="b-submenu__icon">
+                                            <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M47.2631 1.50012C47.328 1.50012 47.4684 1.53352 47.6284 1.75025C47.7882 1.96677 47.9172 2.31361 47.9172 2.74053V46.2597C47.9172 46.6866 47.7882 47.0335 47.6284 47.25C47.4684 47.4667 47.328 47.5001 47.2631 47.5001H2.57229C2.50722 47.5001 2.36655 47.4666 2.20634 47.2497C2.04635 47.0331 1.91724 46.6864 1.91724 46.2597V2.74053C1.91724 2.31389 2.04635 1.96712 2.20634 1.75054C2.36655 1.53366 2.50723 1.50012 2.57229 1.50012H47.2631Z" stroke="#353535" stroke-width="2"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1723 18.2026C12.3814 18.2026 14.1719 16.4117 14.1719 14.2022C14.1719 11.9936 12.3814 10.2026 10.1723 10.2026C7.96313 10.2026 6.17188 11.9936 6.17188 14.2022C6.17188 16.4117 7.96313 18.2026 10.1723 18.2026Z" fill="#353535"/>
+                                                <path d="M4.09253 47.2322L20.8938 23.105L27.8402 32.6605L36.7744 18.3386L47.897 34.8278" stroke="#353535" stroke-width="2"/>
+                                            </svg>
+                                                
+                                        </div>
+                                        <!-- /.b-submenu__icon -->
+                                        <span class="b-submenu__col-title">Услуги химчистки</span>
+                                        <!-- /.b-submenu__col-title -->
+                                    </a>
+                                    <!-- /.b-submenu__header -->
+                                    <ul class="b-submenu-list">
+                                        <li class="b-submenu-list__item"><a href="#">Химчистка ковров</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Химчистка мягкой мебели</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Химчистка диванов</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Химчистка стульев</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Химчистка с выездом</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Стирка, химчистка колясок</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Химчистка, стирка штор</a></li>
+                                    
+                                    </ul>
+                                    <!-- /.b-submenu-list -->
+                                </div>
+                                <!-- /.b-submenu__box -->
+                            </div>
+                            <!-- /.col-md-3 col-sm-6 b-submenu__col -->
+
+                            <div class="col-lg-3 col-md-6 b-submenu__col">
+                                <div class="b-submenu__box">
+                                    <a href="#" class="b-submenu__header">
+                                        <div class="b-submenu__icon">
+                                            <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M47.2631 1.50012C47.328 1.50012 47.4684 1.53352 47.6284 1.75025C47.7882 1.96677 47.9172 2.31361 47.9172 2.74053V46.2597C47.9172 46.6866 47.7882 47.0335 47.6284 47.25C47.4684 47.4667 47.328 47.5001 47.2631 47.5001H2.57229C2.50722 47.5001 2.36655 47.4666 2.20634 47.2497C2.04635 47.0331 1.91724 46.6864 1.91724 46.2597V2.74053C1.91724 2.31389 2.04635 1.96712 2.20634 1.75054C2.36655 1.53366 2.50723 1.50012 2.57229 1.50012H47.2631Z" stroke="#353535" stroke-width="2"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1723 18.2026C12.3814 18.2026 14.1719 16.4117 14.1719 14.2022C14.1719 11.9936 12.3814 10.2026 10.1723 10.2026C7.96313 10.2026 6.17188 11.9936 6.17188 14.2022C6.17188 16.4117 7.96313 18.2026 10.1723 18.2026Z" fill="#353535"/>
+                                                <path d="M4.09253 47.2322L20.8938 23.105L27.8402 32.6605L36.7744 18.3386L47.897 34.8278" stroke="#353535" stroke-width="2"/>
+                                            </svg>
+                                                
+                                        </div>
+                                        <!-- /.b-submenu__icon -->
+                                        <span class="b-submenu__col-title">Услуги для организаций</span>
+                                        <!-- /.b-submenu__col-title -->
+                                    </a>
+                                    <!-- /.b-submenu__header -->
+                                    <ul class="b-submenu-list">
+                                        <li class="b-submenu-list__item"><a href="#">Уборка офисов и промышленных помещений</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Уборка территории</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Мойка фасадов зданий</a></li>
+                                        <li class="b-submenu-list__item"><a href="#">Информация для тендеров</a></li>
+                                    
+                                    </ul>
+                                    <!-- /.b-submenu-list -->
+                                </div>
+                                <!-- /.b-submenu__box -->
+                            </div>
+                            <!-- /.col-md-3 col-sm-6 b-submenu__col -->
+                        </div>
+                        <!-- /.b-submenu__wrap row -->
+                    </div>
+                    <!-- /.container -->
+                </div>
+                <!-- /.b-submenu -->
+                
+                
+            </div>
+            <!-- /.b-navbar -->
+           
+        </header>
+        <!-- /.b-header -->
+        <main>
+            <section class="b-breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="b-breadcrumbs__row">
+                                <div class="b-breadcrumbs-list">
+                                    <a href="#">Главная</a>
+                                    <span>Услуги</span>
+                                </div>
+                                <!-- /.b-breadcrumbs-list -->
+                            </div>
+                            <!-- /.breadcrumbs__row -->
+                        </div>
+                        <!-- /.col-md-12 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.b-breadcrumbs -->
+            <section class="b-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="b-content__title">Услуги</h2>
+                            <!-- /.b-content__title -->
+                        </div>
+                        <!-- /.col-12 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <div class="container b-content-hero-container" >
+                    <div class="row">
+                        <div class="col-12"> 
+                            <div class="b-content-hero-dots"></div>
+                            <div class="b-content-hero">
+                                
+                                <div class="b-content-hero__info">
+                                    <h1><span>мы делаем дома</span><span>чистыми и безопасными</span></h1>
+                                    <a href="#" class="b-content-hero__more">Перейти</a>
+                                    <!-- /.theme-btn -->
+                                </div>
+                                <!-- /.b-content-hero__info -->
+                                <div class="b-content-hero__image" style="background-image: url('img/b-services/hero-bg.jpg');">
+
+                                </div>
+                                <!-- /.b-content-hero__image -->
+                            </div>
+                            <!-- /.b-content-hero -->
+                        </div>
+                        <!-- /.col-12 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+                <div class="b-services-list">
+                    <div class="b-services-list__section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 section__head section__head_alllink">
+                                    <h2 class="section__head-title">Уборка квартир</h2>
+                                    <a href="#" class="section__head-link section__head-link_mobile"><span>Подробнее</span></a>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Уборка кухни</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Уборка кухни</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Мытье полов в казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Обработка сухим туманом в Казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Мытье полов в казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Обработка сухим туманом в Казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                            </div>
+                            <!-- /.row -->
+                              
+                        </div>
+                        <!-- /.container -->
+                    </div>
+                    <!-- /.b-services-list__section -->
+                    <div class="b-services-list__section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 section__head section__head_alllink">
+                                    <h2 class="section__head-title">Уборка квартир</h2>
+                                    <a href="#" class="section__head-link section__head-link_mobile"><span>Подробнее</span></a>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Уборка кухни</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Уборка кухни</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Мытье полов в казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Обработка сухим туманом в Казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Мытье полов в казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Обработка сухим туманом в Казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                            </div>
+                            <!-- /.row -->
+                              
+                        </div>
+                        <!-- /.container -->
+                    </div>
+                    <!-- /.b-services-list__section -->
+                    <div class="b-services-list__section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 section__head section__head_alllink">
+                                    <h2 class="section__head-title">Уборка квартир</h2>
+                                    <a href="#" class="section__head-link section__head-link_mobile"><span>Подробнее</span></a>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Уборка кухни</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Уборка кухни</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Мытье полов в казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Обработка сухим туманом в Казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Мытье полов в казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Обработка сухим туманом в Казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                            </div>
+                            <!-- /.row -->
+                              
+                        </div>
+                        <!-- /.container -->
+                    </div>
+                    <!-- /.b-services-list__section -->
+                    <div class="b-services-list__section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 section__head section__head_alllink">
+                                    <h2 class="section__head-title">Уборка квартир</h2>
+                                    <a href="#" class="section__head-link section__head-link_mobile"><span>Подробнее</span></a>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Уборка кухни</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Уборка кухни</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Мытье полов в казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Обработка сухим туманом в Казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Мытье полов в казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                                <div class="b-services-list__item col-lg-3 col-md-6">
+                                    <div class="b-services-list__box" style="background-image: url('img/b-services/list/1.jpg');">
+                                        <div class="b-services-list__wrap">
+                                            <span>Обработка сухим туманом в Казани</span>
+                                        </div>
+                                        <!-- /.b-services-list__wrap -->
+                                        <div class="b-services-list__hover">
+                                            <a href="#" class="b-services-list__more">Подробнее</a>
+                                            <!-- /.b-services-list__more -->
+                                        </div>
+                                        <!-- /.b-service-list__hover -->
+                                        
+                                    </div>
+                                    <!-- /.b-services-list__box -->
+                                </div>
+                                <!-- /.b-services-list__item col-lg-3 -->
+                            </div>
+                            <!-- /.row -->
+                              
+                        </div>
+                        <!-- /.container -->
+                    </div>
+                    <!-- /.b-services-list__section -->
+                </div>
+                <!-- /.b-services-list -->
+                
+            </section>
+            <!-- /.b-content -->
+
+
+			<!-- contacts -->
+			<section class="contacts">
+				<div class="container">
+					<div class="row section__header section__header_center">
+						<div class="col-lg-5 col-md-7 section__head">
+							<h2 class="section__head-title">Мы всегда на связи!</h2>							
+						</div>
+						<div class="col-lg-5 col-md-7 section__slug">
+							<span>Поможем оформить заявку и рассчитаем стоимсоть</span>
+						</div>						
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<a href="#" class="contacts__item contacts__item_instagram">
+								<img src="img/contacts/instagram.svg" alt="messenger" class="contacts__ico">
+								<span class="contacts__name">Instagram</span>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<a href="#" class="contacts__item contacts__item_telegram">
+								<img src="img/contacts/telegram.png" alt="Telegram" class="contacts__ico">
+								<span class="contacts__name">Telegram</span>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<a href="#" class="contacts__item contacts__item_whatsapp">
+								<img src="img/contacts/whatsapp.png" alt="WhatsApp" class="contacts__ico">
+								<span class="contacts__name">WhatsApp</span>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<a href="#" class="contacts__item contacts__item_viber">
+								<img src="img/contacts/viber.png" alt="Viber" class="contacts__ico">
+								<span class="contacts__name">Viber</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.contacts -->			
+		</main>
+		<!-- /main -->
+
+		<!-- footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-12">
+						<h3>Клининговая компания АПА-Сервис работает в Казани с 2014 г.</h3>
+						<p>Наш принцип – работа на результат. Наша задача доставить максимум качества каждому клиенту.
+						Коллектив компании – команда квалифицированных 
+						специалистов с большим опытом работы.</p>
+						<p>Обращайтесь к нам и в Вашем доме будет чистота!</p>
+					</div>
+					<div class="col-lg-3 col-md-6 footer__col">
+						<h4><a href="#">Услуги</a></h4>
+						<ul>
+							<li><a href="#">Уборка квартир</a></li>
+							<li><a href="#">Уборка после ремонта </a></li>
+							<li><a href="#">Мытье окон</a></li>
+							<li><a href="#">Уборка офисов</a></li>
+							<li><a href="#">Химчистка диванов</a></li>
+							<li><a href="#">Химчистка ковров</a></li>
+							<li><a href="#">Химчистка матраса</a></li>
+							<li><a href="#">Химчистка мебели</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 footer__col">
+						<h4><a href="#">Наш адрес</a></h4>
+						<p>420021, Россия, РТ, <br>г. Казань, ул. Сары Садыковой, 61 оф.224</p>
+						<a href="tel:+78432023947" class="footer__phone">+7 (843) 202-39-47</a>
+                        <a href="mailto:dir@apa-service.ru" class="footer__phone">dir@apa-service.ru</a>
+					</div>
+				</div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="b-footer-bottom">
+                            <span class="b-footer-bottom__item">© 2021 Апа-сервис</span>
+                            <!-- /.b-footer-bottom__item -->
+                            <a href="#" class="b-footer-bottom__item">Пользовательское соглашение</a>
+                            <!-- /.b-footer-bottom__item -->
+                            <a href="#" class="b-footer-bottom__item">Политика конфиденциальности</a>
+                            <!-- /.b-footer-bottom__item -->
+                            <a href="#" class="b-footer-bottom__item">Карта сайта</a>
+                            <!-- /.b-footer-bottom__item -->
+                        </div>
+                        <!-- /.b-footer-bottom -->
+                    </div>
+                </div>
+                <!-- /.row -->
+			</div>
+		</footer>
+		<!-- /footer -->
+
+	</div>
+	<!-- /.wrapper -->
+
+
+	<div class="b-modal b-modal_call">
+        <div class="b-modal__window">
+            <button class="b-modal__close">
+                <span></span><span></span>
+            </button>
+            <!-- /.b-modal__close -->
+            <span class="b-modal__title">
+                
+            </span>
+            <!-- /.b-modal__title -->
+            <form action="#" class="b-modal__form">
+                <input type="text" class="b-modal__input b-modal__input_phone" placeholder="Ваш телефон *">
+                <input type="text" class="b-modal__input b-modal__input_name" placeholder="Ваше имя">
+                <button type="submit" class="b-modal__submit"></button>
+                <!-- /.b-modal__submit -->  
+                <p class="b-modal__subtext">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку персональных данных</a>  и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                <!-- /.b-modal__subtext -->                  
+            </form>
+            <!-- /.b-modal__form -->
+            
+        </div>
+        <!-- /.b-modal__window -->
+    </div>
+    <!-- /.b-modal -->
+	
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>
