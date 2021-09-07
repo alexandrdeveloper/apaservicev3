@@ -1,0 +1,62 @@
+.crumbs 
+	padding: 0
+	&__list
+		width: 100%		
+		padding-top: 20px
+		padding-bottom: 20px
+		border-bottom: 2px solid #ebebeb
+		margin-left: auto
+		margin-right: auto
+	&__item 
+		display: inline-block
+		font-size: 16px
+		+medium 
+		margin-right: 16px
+		color: #404040
+		position: relative
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			bottom: -4px
+			left: 0
+			height: 1px
+			width: 40%
+			background: #404040
+			transform-origin: left
+			transform: scaleX(0)
+			text-shadow: 0 0 0px #404040
+			+transition
+		&:last-child
+			color: #02adcc
+			&::after
+				background: #02adcc			
+		&:hover
+			text-shadow: 0 0 1px #404040
+			&::after
+				transform: scaleX(1)
+			&:last-child
+				text-shadow: 0 0 1px #02adcc
+
+@media screen and (max-width: 991px)
+	.crumbs 
+		&__item
+			font-size: 14px
+			margin-right: 10px
+
+@media screen and (max-width: 767px)
+	.crumbs 
+		&__item
+			font-size: 14px
+			margin-right: 8px
+
+@media screen and (max-width: 567px)
+	.crumbs
+		padding-left: 10px
+		padding-right: 10px
+
+@media screen and (max-width: 320px)
+	.crumbs 
+		&__item
+			font-size: 12px
+			margin-right: 5px

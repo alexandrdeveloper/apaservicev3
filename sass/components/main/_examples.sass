@@ -1,0 +1,80 @@
+.examples 
+	.section__head-link_mobile
+        @media screen and ( max-width: 767px )  
+            margin-bottom: 0 !important
+	&__content 
+		width: 100%
+		display: flex
+		flex-direction: row
+		align-items: flex-start 
+		position: relative
+		min-height: 575px
+	&__item
+		width: calc(100% / 3)
+	&__nav
+		display: block
+		width: 100%
+		text-align: center 
+		+medium
+		+uppercase
+		font-size: 18px
+		padding-top: 18px
+		padding-bottom: 18px
+		color: #fff
+		background-color: #c2c2c2
+		z-index: 4
+		position: relative
+		+transition
+		&::after 
+			content: ''
+			display: block
+			position: absolute
+			top: 98%
+			left: 50%
+			transform: translateX(-50%)
+			width: 46px
+			height: 0
+			border: 30px solid transparent
+			border-top: 24px solid #fa873f
+			z-index: 4
+			opacity: 0
+			+transition
+
+	&__banner
+		position: absolute
+		bottom: 0
+		top: 62px
+		left: 0
+		right: 0
+		height: 512px
+		opacity: 0
+		z-index: 1
+		+transition
+		img 
+			display: block
+			width: 100%
+			height: auto
+		
+	&__item:nth-child(2)
+		.examples__nav 
+			background-color: #fa873f
+			&::after 
+				opacity: 1				
+		.examples__banner
+			opacity: 1
+			z-index: 1
+	&__content:hover
+		.examples__item:nth-child(2)
+			.examples__nav
+				color: #fff
+				background-color: #c2c2c2
+				&::after 
+					opacity: 0
+		.examples__item:hover		
+			.examples__nav 
+				background-color: #fa873f
+				&::after
+					opacity: 1				
+			.examples__banner
+				opacity: 1
+				z-index: 3

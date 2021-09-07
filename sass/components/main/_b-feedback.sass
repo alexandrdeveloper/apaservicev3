@@ -1,0 +1,119 @@
+.b-feedback
+    &-list 
+        @media screen and ( max-width: 767px ) and (min-width: 576px)
+            margin-top: 100px
+        &__item 
+            color: #02ADCC 
+            font-size: 18px
+            line-height: 1.6 
+            margin-bottom: 30px 
+            +regular 
+            font-weight: 400
+            @media screen and ( max-width: 1199px ) and ( min-width: 992px )
+                font-size: 17px
+            @media screen and ( max-width: 576px )
+                font-size: 15px
+                
+        &__wrap 
+            display: block
+            cursor: pointer
+            background-color: #EBEBEB 
+            padding: 20px 45px 
+             
+            border: 3px solid transparent 
+            position: relative
+            overflow: hidden
+            &::after 
+                content: ''
+                display: block
+                width: 170px 
+                height: 46px
+                background-image: url('../img/b-feedback/dots.svg') 
+                background-size: 100% auto
+                background-repeat: no-repeat 
+                background-position: center top 
+                position: absolute
+                bottom: 0
+                left: 50%
+                transform: translateX(-50%) 
+                @media screen and ( max-width: 1199px )
+                    height: 66px
+                    width: 116px
+                    background-image: url('../img/b-feedback/dots-md.svg')
+                @media screen and ( max-width: 575px )
+                    right: 0
+                    left: auto 
+                    transform: translateX(20%)
+            +transition
+            &:hover 
+                filter: drop-shadow(0px 4px 10px #DCDCDC)
+                border-color: #02ADCC
+            @media screen and ( max-width: 1199px ) and ( min-width: 576px )
+                padding: 20px 20px 
+                min-height: 285px
+            @media screen and ( max-width: 575px )
+                padding: 20px 15px 
+                min-height: 260px
+        &__header
+            margin-bottom: 12px
+        &__body 
+            margin-bottom: 20px
+            p 
+                margin: 0 
+                display: block
+                min-height: 116px
+                @media screen and ( max-width: 575px )
+                    min-height: none
+        &__footer 
+            display: flex
+            flex-direction: row 
+            justify-content: space-between
+            align-items: flex-start 
+        &__logo 
+            width: 62px
+            img, svg
+                display: block 
+                width: 100%
+        &__item
+            &:nth-child(2),
+            &:nth-child(5),
+            &:nth-child(8),
+            &:nth-child(11),
+            &:nth-child(14),
+            &:nth-child(17),
+            &:nth-child(20)
+                .b-feedback-list__wrap 
+                    color: #FA873F 
+                    background-color: #FFDEC9  
+
+                    background-image: url('../img/b-feedback/dots-rose.svg') 
+                    background-position: 125% 5% 
+                    background-size: 50% auto
+                    background-repeat: no-repeat
+                    
+                    &::after 
+                        background-image: url('../img/b-feedback/dots-rose.svg') 
+                        @media screen and ( max-width: 1199px )
+                            background-image: url('../img/b-feedback/dots-rose-md.svg')
+                    &:hover 
+                        border-color: #FA873F
+                
+                
+            &:nth-child(3),
+            &:nth-child(6),
+            &:nth-child(9),
+            &:nth-child(12),
+            &:nth-child(15),
+            &:nth-child(18),
+            &:nth-child(21)
+                .b-feedback-list__wrap 
+                    color: #fff 
+                    background-color: #02ADCC  
+                    &::after 
+                        background-image: url('../img/b-feedback/dots-blue.svg') 
+                        @media screen and ( max-width: 1199px )
+                            background-image: url('../img/b-feedback/dots-blue-md.svg')
+
+                    &:hover 
+                        border-color: #ACEAF4
+

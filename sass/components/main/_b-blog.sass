@@ -1,0 +1,123 @@
+.b-blog 
+    &-list 
+        &__item 
+            display: block
+            margin-bottom: 30px
+            
+        &__wrap 
+            display: flex 
+            flex-direction: column
+            width: 100% 
+            background-color: #EBEBEB 
+            height: 266px 
+            box-sizing: border-box
+            cursor: pointer 
+            position: relative
+            background-image: url('../img/b-content/blog/dots.svg')
+            background-size: 100px auto 
+            background-position: right bottom 
+            background-repeat: no-repeat 
+            @media screen and ( max-width: 1199px ) and (min-width: 992px)
+                height: 210px
+            @media screen and ( max-width: 991px ) and (min-width: 768px)
+                height: 260px
+            @media screen and ( max-width: 767px ) and (min-width: 576px)
+                height: 240px
+            @media screen and ( max-width: 575px )
+                height: 230px
+                margin-left: auto
+                margin-right: auto
+                max-width: 280px
+                background-image: url('../img/b-content/blog/dots-xs.svg')
+            &::after 
+                content: ''
+                display: block
+                position: absolute
+                top: 0
+                left: 0
+                bottom: 0
+                right: 0
+                border: 3px solid transparent
+                +transition 
+            &:hover 
+                filter: drop-shadow(0px 4px 10px #DCDCDC)
+                &::after
+                    border-color: #02ADCC
+                
+        &__thumbnail 
+            width: 100% 
+            position: relative
+            background-size: cover 
+            background-position: center center 
+            background-repeat: no-repeat
+            &::after 
+                content: ''
+                display: block
+                width: 100%
+                padding-top: 112px 
+                @media screen and ( max-width: 1199px ) and (min-width: 992px)
+                    padding-top: 92px
+                @media screen and ( max-width: 991px ) and (min-width: 768px)
+                    padding-top: 145px
+                @media screen and ( max-width: 767px )
+                    padding-top: 123px
+        &__info 
+            padding: 20px  
+            
+            @media screen and ( max-width: 1199px ) and (min-width: 992px)
+                padding: 18px 15px 
+                
+            @media screen and ( max-width: 991px )
+                padding-top: 14px
+            @media screen and ( max-width: 767px )
+                padding: 8px 15px   
+            span 
+                font-size: 18px 
+                line-height: 1.6
+                +regular 
+                font-weight: 400
+                color: #02ADCC
+                display: -webkit-box
+                -webkit-line-clamp: 3
+                -webkit-box-orient: vertical
+                overflow: hidden
+                @media screen and ( max-width: 1199px )
+                    font-size: 17px
+        &__item
+            &:nth-child(2),
+            &:nth-child(5),
+            &:nth-child(8),
+            &:nth-child(11),
+            &:nth-child(14),
+            &:nth-child(17),
+            &:nth-child(20)
+                .b-blog-list__wrap 
+                    background-color: #FFDEC9 
+                    background-image: url('../img/b-content/blog/dots-rose.svg')
+                    @media screen and ( max-width: 576px )
+                        background-image: url('../img/b-content/blog/dots-rose-xs.svg')
+                    &:hover 
+                        &::after 
+                            border-color: #FA873F
+                .b-blog-list__info                     
+                    span 
+                        color: #FA873F
+                
+            &:nth-child(3),
+            &:nth-child(6),
+            &:nth-child(9),
+            &:nth-child(12),
+            &:nth-child(15),
+            &:nth-child(18),
+            &:nth-child(21)
+                .b-blog-list__wrap 
+                    background-color: #02ADCC 
+                    background-image: url('../img/b-content/blog/dots-blue.svg')
+                    @media screen and ( max-width: 576px )
+                        background-image: url('../img/b-content/blog/dots-blue-xs.svg')
+                    &:hover 
+                        &::after 
+                            border-color: #ACEAF4
+                .b-blog-list__info                     
+                    span 
+                        color: #FFFFFF

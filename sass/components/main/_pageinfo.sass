@@ -1,0 +1,215 @@
+.pageinfo 
+	padding-top: 60px
+	padding-bottom: 0
+	.row
+		padding-bottom: 60px
+		border-bottom: 2px solid #ebebeb
+	&__content 
+		padding: 18px 45px
+		p 
+			font-size: 18px
+			+medium 
+			line-height: 1.67
+			color: #353535
+			text-align: justify 
+
+
+.cleaner-team
+	border: 3px solid #dcdcdc
+	width: 100%
+	max-width: 460px
+	margin-left: auto
+	margin-right: auto
+	position: relative
+	&__ico
+		width: 100%
+		padding-top: 70px
+		display: flex
+		justify-content: center
+		align-items: center 
+		padding-bottom: 45px
+		img 
+			display: block
+			width: 120px
+	&__info 
+		width: 100%
+		padding: 0 80px
+	&__title 
+		display: block
+		width: 100%
+		text-align: center 
+		+uppercase
+		font-size: 24px
+		+medium
+		line-height: .75
+		color: #353535
+		margin-bottom: 20px
+	&__list
+		padding-left: 37px
+		li 
+			display: inline-block 
+			font-size: 16px
+			+medium 
+			color: #353535
+			line-height: 1.12
+			margin-bottom: 15px
+			position: relative
+			&::before
+				content: '\f00c'
+				font-family: 'FA-PR-400'
+				display: inline-block
+				width: 20px
+				height: 20px
+				text-align: center
+				color: #fff 
+				background-color: #fa873f
+				border-radius: 50%
+				font-size: 14px
+				position: absolute
+				left: -16px
+				transform: translateX(-100%)
+				line-height: 1.4
+	&__more
+		width: 100%
+		padding: 45px 5px
+		padding-top: 30px
+		text-align: center
+		a
+			text-align: center
+			display: inline-block
+			padding: 14px 45px 
+			+uppercase
+			font-size: 18px
+			+medium 
+			color: #fa873f
+			border: 2px solid #fa873f
+			z-index: 3
+			position: relative
+			overflow: hidden
+			outline: none
+			+transition
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				background-color: #fa873f
+				z-index: -1
+				transform: translateY(200%)
+				+transition
+			&:hover
+				color: #fff
+				&::before 
+					transform: translateY(0)
+	&__price
+		position: absolute
+		top: -14px
+		right: 40px
+		padding-top: 14px
+		padding-left: 16px
+		padding-right: 16px
+		padding-bottom: 24px
+		background-image: url('../../../img/page-description/figure.png')
+		background-size: 100% 100%
+		p
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			align-items: center
+			margin: 0
+			padding: 0
+			color: #fff
+			font-size: 18px
+			+medium
+			line-height: 1.2
+			span 
+				font-size: 24px
+
+.page-description
+	padding-bottom: 0
+	&__row
+		flex-direction: row-reverse
+		padding: 35px 0
+		&:nth-child(even)
+			flex-direction: row
+		&:last-child
+			border-bottom: 2px solid #ebebeb
+	&__image
+		width: 100%
+		img 
+			display: block
+			width: 100%
+	&__content
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: flex-start
+		h3 
+			color: #404040
+			+medium
+			font-size: 30px
+			font-weight: 500
+			+uppercase
+			margin-top: 0
+			margin-bottom: 30px
+		p
+			color: #033535
+			+regular
+			font-size: 18px
+			font-weight: 400
+			line-height: 1.67
+			margin: 0
+
+
+@media screen and (max-width: 567px) 
+	.pageinfo__content
+		padding-bottom: 30px
+		padding-left: 6px
+		padding-right: 6px
+		font-size: 16px
+		p 
+			padding: 0
+	.cleaner-team__info
+		padding-left: 30px
+		padding-right: 30px
+		ul li 
+			font-size: 16px
+
+	.cleaner-team__title
+		font-size: 22px
+	.cleaner-team__title 
+		line-height: 1.2
+	.page-description__content h3 
+		padding-left: 10px
+		padding-right: 10px
+		margin-bottom: 20px
+	.page-description__content p 
+		padding-left: 10px
+		padding-right: 10px
+		text-align: justify
+		font-size: 16px
+
+	.pageinfo
+		padding-top: 0
+		p 
+			font-size: 16px
+
+	.page-description__content h3
+		font-size: 22px
+
+	.cleaner-team__price
+		right: 20px
+		padding-left: 10px
+		padding-right: 10px
+
+@media screen and (max-width: 320px) 
+	.cleaner-team__info,
+	.cleaner-team__more
+		padding-left: 10px
+		padding-right: 10px
+	.cleaner-team__more a
+		padding-left: 20px
+		padding-right: 20px

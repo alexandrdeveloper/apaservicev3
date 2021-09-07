@@ -101,7 +101,7 @@ $(document).ready(function() {
 	}, { offset: '50%' });
 
 		
-	$(".phone-num-input").inputmask("+7 (999) 999 99 99");
+	$(".b-modal__input_phone").inputmask("+7 (999) 999 99 99");
 
 		
 	var rooms = $('#rooms-num');
@@ -182,6 +182,8 @@ $(document).ready(function() {
 	        container.fadeOut(300);
 	    }
 	});
+
+	
 		
 
 	
@@ -205,6 +207,8 @@ $(document).ready(function() {
 		
 		
 	});
+
+	
 
 	
 
@@ -276,7 +280,16 @@ $(document).ready(function() {
 		callFormWin.classList.remove('b-modal_visible');
 	});
 
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".b-modal__window"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			div.parent('.b-modal').removeClass('b-modal_visible'); // скрываем его
+		}
+	});
+
 	
+
 
 	
 	

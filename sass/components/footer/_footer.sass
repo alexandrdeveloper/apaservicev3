@@ -1,0 +1,156 @@
+footer 
+	padding-top: 50px
+	padding-bottom: 50px
+	background: #9aa8b4
+	color: #fff
+	h3
+		+regular
+		font-weight: 400
+		line-height: 1.6 
+		font-size: 24px
+		display: inline-block
+		margin-bottom: 25px
+		margin-top: 0 
+		@media screen and ( max-width: 991px )
+			font-size: 22px 
+			margin-bottom: 20px
+		@media screen and ( max-width: 576px )
+			font-size: 20px 
+			margin-bottom: 10px
+	p
+		display: inline-block
+		margin-bottom: 25px
+		+regular
+		font-size: 18px
+		line-height: 1.7
+		margin-top: 0
+		@media screen and ( max-width: 991px )
+			font-size: 17px
+		@media screen and ( max-width: 576px )
+			font-size: 15px
+	h4 
+		+regular 
+		font-weight: 400
+		font-size: 22px
+		display: inline-block
+		margin-top: 0
+		margin-bottom: 10px
+		padding-bottom: 10px
+		position: relative   
+		@media screen and ( max-width: 991px )
+			font-size: 20px
+		a 
+			color: #fff 
+			&:hover 
+				color:#02ADCC
+				text-decoration: underline
+		@media screen and ( max-width: 767px )
+			text-align: center
+			display: block
+			width: 100%
+			+medium 
+			font-weight: 500
+			padding-top: 30px
+	ul
+		padding-left: 0
+		margin: 0
+		display: flex
+		flex-direction: column 
+		@media screen and ( max-width: 767px )
+			margin-left: auto
+			margin-right: auto
+			
+		li 
+			display: inline-block
+			margin-bottom: 11px
+			a 
+				color: #fff
+				font-size: 18px
+				@media screen and ( max-width: 991px )
+					font-size: 17px
+				&:hover
+					color:#02ADCC
+					text-decoration: underline
+
+.footer 
+	&__col
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: flex-start 
+		@media screen and ( max-width: 767px )
+			margin-left: auto
+			margin-right: auto
+			display: flex
+			flex-direction: column 
+			align-items: center 
+			p 
+				text-align: center
+	&__phone
+		+medium
+		font-size: 29px
+		color: #fff 
+		margin-bottom: 38px 
+		@media screen and ( max-width: 576px )
+			font-size: 24px
+		@media screen and ( max-width: 576px )
+			font-size: 20px 
+			margin-bottom: 25px
+		&:hover 
+			color:#02ADCC
+			text-decoration: underline
+	&__call
+		color: #02ADCC
+		text-decoration: underline 
+		font-size: 16px
+
+.b-footer-bottom
+	display: flex
+	flex-direction: row 
+	flex-wrap: wrap 
+	justify-content: center
+	align-items: center
+	width: 100% 
+	padding-top: 50px
+	padding-bottom: 20px 
+	@media screen and ( max-width: 991px )
+		justify-content: center
+		align-items: center 
+		padding-top: 30px
+	@media screen and ( max-width: 576px )
+		flex-direction: column
+		align-items: center
+		text-align: center
+
+	&__item 
+		color: #BAC3CB
+		font-size: 16px
+		line-height: 1.3
+		margin-bottom: 10px 
+		display: inline-block		
+		position: relative 
+		display: flex
+		flex-direction: row 
+		align-items: center 
+		&:not(:last-child)
+			margin-right: 15px 
+			@media screen and ( max-width: 991px )
+				margin-right: 0
+				width: 50%
+			@media screen and ( max-width: 576px )
+				width: 100%
+			&::after 
+				content: ''
+				display: block
+				height: 18px
+				width: 2px
+				background-color: #BAC3CB 
+				margin-left: 15px
+				@media screen and ( max-width: 991px )
+					display: none
+		@media screen and ( max-width: 991px )
+			width: 50%
+			justify-content: center
+	a 
+		&:hover 
+			text-decoration: underline

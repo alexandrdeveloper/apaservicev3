@@ -1,0 +1,37 @@
+.equipment	
+	&__item
+		width: 100%
+		background-size: 100%
+		background-position: 0 70%
+		background-repeat: no-repeat
+		z-index: 4
+		max-width: 364px
+		margin: auto
+		position: relative
+		&::before
+			content: ''
+			display: block
+			width: 100%
+			padding-top: 57%
+	&__info
+		position: absolute
+		+medium
+		font-size: 18px
+		color: #404040
+		text-align: right 
+		width: 60%
+		top: 20%
+		right: 16px
+		span 
+			display: inline-block
+	&__box
+		z-index: 3
+		&:nth-child(1)
+			.equipment__item
+				background-position: 50% 0%
+				background-size: 100% 100%
+		&:nth-child(3)
+			.equipment__item
+				background-position: 50% 100%
+				background-size: 100% 111%
+	

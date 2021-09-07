@@ -1,0 +1,92 @@
+.examples__content
+	display: none
+
+.examples__description	
+	display: block
+	width: 100%
+	text-align: right
+	padding-top: 15px
+	padding-bottom: 15px
+	+medium
+	font-size: 14px
+	color: #21b7d2
+
+
+
+.tab
+	width: 100%
+	&-toggle		
+		text-align: center 
+		width: 100%
+		display: flex
+		flex-direction: row
+		&__item
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 100%
+			text-align: center 
+			+medium
+			+uppercase
+			font-size: 18px
+			padding-top: 18px
+			padding-bottom: 18px
+			color: #fff
+			background-color: #c2c2c2
+			+transition
+			position: relative
+			&::after 
+				content: ''
+				display: block
+				position: absolute
+				top: 98%
+				left: 50%
+				transform: translateX(-50%)
+				width: 46px
+				height: 0
+				border: 30px solid transparent
+				border-top: 24px solid #fa873f
+				z-index: 4
+				opacity: 0
+				+transition
+			&:hover,
+			&_active
+				background-color: #fa873f
+				&::after 
+					opacity: 1
+	&-content
+		&__item
+			width: 100%
+			display: none			
+			img 
+				display: block
+				width: 100%
+				opacity: 0
+				+transition
+			&_visible
+				display: block
+				img
+					opacity: 1
+
+
+
+@media screen and (max-width: 767px) 
+	.tab
+		&-toggle
+			&__item
+				font-size: 14px
+
+
+@media screen and (max-width: 576px) 
+	.tab
+		&-toggle
+			&__item
+				font-size: 12px
+				padding-top: 14px
+				padding-bottom: 14px
+	.tab-toggle__item::after
+		top: 86%
+
+	.examples__description
+		padding-left: 10px
+		padding-right: 10px

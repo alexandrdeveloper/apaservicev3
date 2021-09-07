@@ -1,0 +1,91 @@
+.team 
+	&__item
+		border: 2px solid #d9d9d9
+		width: 100%
+		max-width: 370px
+		margin-left: auto
+		margin-right: auto
+		display: flex
+		flex-direction: row 
+		position: relative
+		height: 196px
+		z-index: 4
+		margin-bottom: 48px
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: 101%
+			left: 0
+			width: 100%
+			height: 4px
+			background-color: #f3f3f3
+			z-index: -1
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			top: calc(101% + 7px)
+			left: 50%
+			transform: translateX(-50%)
+			width: 170px
+			height: 40px
+			background-image: url('../img/team/dot.png')
+			background-repeat: repeat
+
+
+	&__image
+		width: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 100%
+		img 
+			display: block
+			width: 80%
+			max-width: 153px
+	&__info
+		width: 50%	
+		position: relative
+	&__name
+		+regular 
+		font-weight: 400 
+		font-size: 14px
+		color: #404040
+		+uppercase
+		max-width: 100px
+		display: inline-block
+		position: absolute
+		top: 60px
+		left: 0
+	&__specialty
+		+regular 
+		font-weight: 400
+		color: #b3b3b3
+		font-size: 16px
+		position: absolute
+		bottom: 60px
+		left: 0
+	&__rating
+		position: absolute
+		top: 0
+		right: 16px
+		padding-top: 11px
+		padding-left: 10px
+		padding-right: 10px
+		padding-bottom: 6px
+		background-color: #53c7dc
+		color: #fff
+		+bold 
+		font-size: 18px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			top: 100%
+			left: 0
+			width: 100%
+			border: 24px solid transparent
+			border-top: 21px solid #53c7dc
+			display: none
+

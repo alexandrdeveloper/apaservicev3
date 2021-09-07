@@ -1,0 +1,160 @@
+* 
+	box-sizing: border-box
+
+body 
+	padding: 0
+	margin: 0
+	height: 100%
+	overflow-x: hidden 
+	+regular 
+	line-height: 1.3
+	&.no-scroll
+		overflow-y: hidden
+
+a 
+	text-decoration: none 
+
+ul, li 
+	list-style: none 
+
+button, input
+	outline: none 
+button 
+	cursor: pointer
+
+.wrapper
+	background-color: #fff
+	transition: .3s ease-out
+	&_moved
+		transform: translateX(240px)
+
+.button-more
+	display: inline-block
+	padding: 14px 40px
+	border: 2px solid #02adcc
+	color: #02adcc
+	+bold 
+	+transition 
+	+uppercase
+	letter-spacing: 1px
+	z-index: 2	
+	outline: none
+	overflow: hidden
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: #02adcc
+		z-index: -1
+		transform: translateY(100%)
+		+transition
+		
+	&:hover
+		color: #fff
+		&::before
+			transform: translateY(0)
+
+	&_accent 
+		border-color: #02ADCC
+		
+
+
+
+.accordeon
+	padding-left: 30px
+	padding-right: 30px	
+	width: 100%
+	&__title
+		+regular 
+		font-weight: 400
+		color: #fa873f
+		font-size: 20px
+		padding-top: 24px
+		padding-bottom: 24px
+		border-top: 2px solid #E7EDEE
+		cursor: pointer
+		position: relative
+		padding-right: 40px
+		@media screen and ( max-width: 991px )
+			font-size: 17px
+		@media screen and ( max-width: 576px )
+			font-size: 15px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			top: 50%
+			right: 10px
+			width: 6px
+			height: 12px
+			background-image: url('../img/acc/arrow-new.svg')
+			background-size: auto 100%
+			background-repeat: no-repeat
+			background-position: center center
+			transform: translateY(-50%) rotate(90deg)
+			transition: transform .3s
+	&__info
+		padding-left: 50px
+		padding-right: 50px
+		padding-bottom: 50px
+		display: none
+		p 
+			margin: 0
+			color: #4e4e4e
+			font-size: 18px
+			+regular 
+			font-weight: 400
+			line-height: 1.6
+			transform-origin: top 
+			@media screen and ( max-width: 991px )
+				font-size: 17px 
+			@media screen and ( max-width: 576px )
+				font-size: 15px
+				
+			
+	&__item
+		&:last-child
+			border-bottom: 2px solid #E7EDEE
+	&__item
+		.accordeon__info
+			display: none
+	&__item_active
+		.accordeon__title
+			&::after
+				transform: translateY(-50%) rotate(-90deg)
+		.accordeon__info
+			
+
+.mobile-menu
+	display: none 
+
+.menu-toggle
+	display: none 
+
+
+
+/**** NEW Styles/ *****/
+
+
+
+.page__title
+	margin: 0
+	padding: 0
+	h1 
+		margin: 25px 0
+		+uppercase
+		font-size: 33px
+		+medium
+		line-height: 1.7
+		color: #353535
+
+.pb0	
+	padding-bottom: 0
+.pt0	
+	padding-top: 0
+
+/**** ./NEW Styles ****/

@@ -1,0 +1,396 @@
+@media screen and (min-width: 992px) and (max-width: 1360px){
+	.header-categories__title{
+		font-size: 19px;
+	}
+	.header-categories__ico{
+		width: 50px;
+	}
+	.examples__content{
+		min-height: 416px;
+	} 
+	.equipment__info{
+		font-size: 15px;
+	} 
+	.rating__mark{
+		max-width: 58px;
+	}
+	.rating__name {
+		font-size: 16px;
+	}
+	.contacts__ico {
+		width: 30px;
+		margin-right: 24px;
+	}
+	.contacts__name{
+		font-size: 16px;
+	} 
+	.footer__phone {
+		font-size: 19px;
+	}
+	.calc__row{
+		padding-left: 10px;
+		padding-right: 10px;
+	} 
+	input.rooms,
+	input.bathroom{
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.calc input.bathroom, .calc input.rooms{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	h1{
+		margin: auto;
+		margin-bottom: 32px;
+	}
+	.logo img{
+		max-height: 46px;
+	}
+	.navbar__head-slug .slag{
+		font-size: 16px;
+	}
+	.menu{
+		justify-content: space-between;
+		margin-top: 32px;
+	}
+	.menu li{
+		margin-left: 0;
+	}
+	.header-categories__ico{
+		width: 40px;
+	}
+	.header-categories__title,
+	.price__link {
+		font-size: 16px;
+	}
+	.banner-text__item{
+
+	}
+	.banner-text__title{
+		font-size: 32px;
+	}
+	.button-more{
+		padding: 10px 34px;
+	}
+	.banner-image__item img{
+		height: 100%;
+		width: auto;
+
+	}
+	.banner-image .slick-prev{
+		left: -46%;
+	}
+	.examples__content{
+		min-height: 320px;
+	}
+	.equipment__info{
+		font-size: 11px;
+	} 
+	
+	.section__head-link {
+		padding-left: 16px;
+		padding-right: 16px;
+		font-size: 16px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	h1{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+	}
+	.navbar__head-slug .slag{
+		text-align: center;
+		font-size: 16px;
+		margin-bottom: 19px;
+	}
+	.head-contacts{
+		align-items: flex-start;
+	}
+	.head-contacts__phone{
+		margin-bottom: 80px;
+	}
+	.head-contacts__phone-num{
+		font-size: 18px;
+		span{
+			font-size: 14px;
+		}
+	}
+	.menu{
+		display: none;
+	}
+	.price__row{
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.price__link{
+		width: 90%;
+		text-align: center !important;
+		margin-bottom: 19px;
+	}
+	.calc input, 
+	.calc button{
+		margin-bottom: 15px;
+		max-height: 40px;
+	}
+
+	.calc_visible{
+		transform: translateY(100%);
+	}
+	.calc_visible-mobile{
+		transform: translate(0);
+	}
+	.banner{
+		.slick-prev{
+			left: 10px;
+			z-index: 20;
+		}
+		.slick-next{
+			right: 10px;
+			z-index: 20;
+		}
+		.button-more{
+			background-color: rgba(#fff, .7);
+		}
+	}
+	.banner-text {
+		position: absolute;		
+		background: transparent;
+		&__item{
+			width: 80%;
+			
+		}
+		&__title{
+			font-size: 19px;
+			span {
+
+				float: left;
+				clear: both;
+
+			}
+		}
+		.banner-text__carousel{
+			left: 10%;
+			width: 80%;
+		}
+	}
+	.banner-image__item img{
+		width: 100%;
+		height: auto;
+
+	}
+	.navbar__menu{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		flex-direction: column;
+	}
+	.mobile-menu{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		max-width: 240px;
+		background: #64cde0;
+		padding-left: 0;
+		margin: 0;
+		padding-top: 60px;	
+		transform: translateX(-100%);
+		li{
+			width: 100%;
+			a{
+				display: block;
+				width: 100%;
+				padding: 10px 20px;
+				background-color: #64cde0;
+				text-transform: uppercase;
+				color: #fff;
+				border-top: 1px solid rgba(#fff, .3);
+
+				&:hover{
+					background-color: #fff;
+					color: #64cde0;
+				}
+			}
+			&:last-child{
+				a{
+					border-bottom: 1px solid rgba(#fff, .3);
+				}
+			}
+		}
+
+		.carret{
+			ul{
+				display: none;
+			}
+			
+		}
+	}
+	.navbar__head-item{
+		position: relative;
+	}
+	.menu-toggle{
+		display: block;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		border: none;
+		background: transparent;
+		span{
+			display: block;
+			width: 30px;
+			height: 2px;
+			background-color: #64cde0;
+			margin: 4px 0;
+			position: relative;
+			transition: .3s ease-out;
+		}
+		&_close{
+			span:nth-child(1){
+				transform: rotate(45deg);
+				top: 6px;
+			}
+			span:nth-child(2){
+				width: 0;
+			}
+			span:nth-child(3){
+				transform: rotate(-45deg);
+				bottom: 6px;
+			}
+
+		}
+	}
+	.accordeon__info{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.section__head{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h2{
+			text-align: center;
+			font-size: 28px;
+			line-height: 1.2;
+
+		}
+	} 
+	.section__head-link {
+		font-size: 16px;
+	}
+	.section__description p{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.examples__content {
+		min-height: 0;
+		height: 144px;
+	}
+	.examples__nav {
+		font-size: 10px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+	.examples__banner{
+		top: 40px;
+	}
+	.certificate__carousel .slick-prev{
+		left: -20px;
+	}
+	.certificate__carousel .slick-next{
+		right: -20px;
+	}
+	.calc__row{
+		position: relative;
+	}
+
+	.calc-open{
+		display: block;
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		width: 100%;
+		font-size: 16px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		background-color: #fa873f;
+		color: #fff;
+		margin-bottom: 0 !important;
+		border: none;
+		font-family: 'Geometria Bold';
+		text-transform: uppercase;
+		&::after{
+			content: '';
+			display: inline-block;
+			height: 12px;
+			width: 12px;
+			border-top: 2px solid #fff;
+			border-left: 2px solid #fff;
+			transform: rotate(45deg);
+			line-height: 0;
+			margin-left: 10px;
+			vertical-align: -4px;
+			transition: .3s;
+
+		}
+		&_active{
+			&::after{
+				transform: rotate(225deg);
+				vertical-align: 1px;
+			}
+		}
+	}
+
+
+}
+
+
+@media screen and (max-width: 420px) {
+	.banner-text{
+		height: 64px;
+	}
+	.banner-text__title{
+		font-size: 16px;
+		width: 70%;
+	}
+	.banner-image{
+		width: 100%;
+	}
+	.banner-image__item img{
+		height: 100%;
+		width: auto;
+
+	}
+	.button-more{
+		padding: 10px 24px;
+	}
+	.examples__content {
+		min-height: 0;
+		height: 96px;
+	}
+	.calc input, 
+	.calc button{
+		margin-bottom: 15px;
+		max-height: 51px;
+		font-size: 14px;
+	}
+	input.rooms,
+	input.bathroom{
+		font-size: 12px;
+	}
+}

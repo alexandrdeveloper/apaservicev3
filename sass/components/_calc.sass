@@ -1,0 +1,86 @@
+.calc
+	width: 100%
+	position: fixed
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 10
+	transform: translateY(150%)
+	+transition
+	&_visible
+		transform: translateY(0)
+	&__row
+		background-color: #eeeeee
+		padding-top: 22px
+		padding-bottom: 32px
+		padding-left: 26px
+		padding-right: 26px
+		box-shadow: 0 0 20px rgba(0,0,0,.3)
+		width: 100%
+		max-width: 1100px
+		margin-left: auto
+		margin-right: auto
+	input
+		width: 100%
+		background-color: #fff
+		border: none 
+		text-align: center 
+		+regular
+		font-size: 18px
+		padding: 14px
+		&.bathroom,
+		&.rooms
+			margin-left: 4px
+			margin-right: 4px
+			width: 60%
+	button[type="submit"]
+		width: 100%
+		height: 100%
+		+medium 
+		+uppercase
+		font-size: 18px
+		color: #fff
+		border: 2px solid #fa873f
+		background-color: #fa873f
+		+transition 
+		cursor: pointer
+		&:hover
+			background: transparent
+			color: #fa873f
+	input[type="number"]
+		display: none
+.input-group
+	display: flex
+	flex-direction: row
+.input-button
+	display: block
+	margin: 2px
+	height: 51px
+	width: 51px
+	margin: 0
+	background: #fff
+	border: none
+	text-align: center
+	position: relative
+	span 
+		display: block
+		width: 20px
+		height: 3px
+		background-color: #fa873f
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		&:nth-child(2)
+			transform: translate(-50%, -50%) rotate(90deg)
+	&-minus
+		span:nth-child(2)
+			display: none
+	&:hover
+		background-color: #fa873f
+		span 
+			background-color: #fff
+	
+	
+.calc-open
+	display: none 

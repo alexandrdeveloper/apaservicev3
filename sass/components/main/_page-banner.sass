@@ -1,0 +1,80 @@
+.page-banner
+	padding: 70px 0
+	&__slider
+		width: 100%		
+		position: relative
+		margin: auto
+		.slick-arrow
+			position: absolute
+			background-color: #eeeeee
+			border: none
+			height: 100%
+			width: 55px
+			font-size: 0
+			top: 0
+			bottom: 0	
+			z-index: 6
+		.slick-prev
+			left: -2px
+			&::before
+				content: ''
+				display: inline-block
+				width: 20px
+				height: 20px
+				border-top: 2px solid #46c0d6
+				border-left: 2px solid #46c0d6
+				transform-origin: center
+				transform: rotate(-45deg) translate(25%, 25%)
+
+		.slick-next
+			right: -2px
+			&::before
+				content: ''
+				display: inline-block
+				width: 20px
+				height: 20px
+				border-top: 2px solid #46c0d6
+				border-right: 2px solid #46c0d6
+				transform-origin: center
+				transform: rotate(45deg) translate(-25%, 25%)
+	&__slide
+		width: 100%
+		img 
+			display: block
+			width: 100%
+
+	
+@media screen and (max-width: 767px)
+	.page-banner
+		padding: 40px 0
+		&__slider
+			width: 100%		
+			position: relative
+			margin: auto
+			.slick-arrow				
+				width: 35px
+		.slick-prev
+			left: -2px
+			&::before
+				content: ''
+				display: inline-block
+				width: 15px
+				height: 15px
+				border-top: 1px solid #46c0d6
+				border-left: 1px solid #46c0d6
+		.slick-next
+			right: -2px
+			&::before
+				content: ''
+				display: inline-block
+				width: 15px
+				height: 15px
+				border-top: 1px solid #46c0d6
+				border-right: 1px solid #46c0d6
+
+@media screen and (max-width: 576px)
+	.page-banner
+		&__slider
+			width: 98%		
+			position: relative
+			margin: auto 

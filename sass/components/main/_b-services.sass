@@ -1,0 +1,157 @@
+.b-services
+    
+    &-list
+        &__section 
+            margin-bottom: 50px
+        .section__head
+            padding-left: 15px
+            padding-right: 15px 
+            margin-bottom: 45px
+            h2 
+                text-transform: uppercase
+            .section__head-link
+                padding-right: 15px
+                padding-left: 15px
+                font-size: 18px
+        &__item 
+            margin-bottom: 30px
+            @media screen and ( max-width: 576px )
+                margin-bottom: 20px
+        &__box 
+            width: 100%
+            background-size: cover 
+            background-position: center center 
+            background-repeat: no-repeat 
+            position: relative 
+            
+            +transition
+            @media screen and ( max-width: 767px )
+                max-width: 520px 
+                margin-left: auto
+                margin-right: auto
+            &::after 
+                content: ''
+                display: block
+                width: 100%
+                padding-top: 100% 
+                @media screen and ( max-width: 991px )
+                    padding-top: 210px
+                @media screen and ( max-width: 576px )
+                    padding-top: 160px
+        &__wrap 
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0 
+            padding-top: 50%
+            padding-left: 14px
+            padding-right: 18px
+            background-color: rgba(235, 235, 235, 0.85)
+            background-image: url('../img/b-services/list/dots.svg')
+            background-repeat: no-repeat 
+            background-position: right 10px top 10px
+            background-size: 116px auto
+            color: #02ADCC
+            font-size: 24px
+            +regular 
+            line-height: 1.2
+            font-weight: 400 
+            +transition 
+            @media screen and ( max-width: 1199px ) and ( min-width: 768px )
+                font-size: 20px
+                padding-left: 15px
+                padding-right: 15px
+            @media screen and ( max-width: 991px )
+                padding-top: 100px
+                max-width: 520px 
+            @media screen and ( max-width: 576px )
+                font-size: 17px 
+                padding-top: 60px
+            span 
+                display: block
+                transform: translateX(0px)
+                +transition
+        &__hover 
+            position: absolute
+            top: 0
+            left: 0
+            bottom: 0
+            right: 0 
+            border: 2px solid transparent
+            box-sizing: border-box 
+            +transition
+        &__more 
+            position: absolute
+            bottom: 16px
+            left: 50%
+            transform: translateX(-50%)
+            text-transform: uppercase
+            color: #02ADCC
+            font-size: 16px
+            +regular 
+            font-weight: 400
+            letter-spacing: 1px
+            opacity: 0
+            +transition
+            &::after 
+                content: ''
+                display: block
+                width: 100%
+                height: 1px
+                left: 0
+                right: 0
+                bottom: 0
+                background-color: #02ADCC
+        &__box 
+            &:hover
+                filter: drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.25))
+                border-color: #02ADCC  
+                .b-services-list__wrap
+                    opacity: 0 
+                    
+                    span 
+                        transform: translateX(20px)
+                        opacity: 0
+                .b-services-list__hover
+                    border-color: #02ADCC
+                .b-services-list__more 
+                    opacity: 1
+        &__item 
+            &:nth-child(2),
+            &:nth-child(5),
+            &:nth-child(8),
+            &:nth-child(11),
+            &:nth-child(14),
+            &:nth-child(17),
+            &:nth-child(20)
+                .b-services-list__wrap 
+                    color: #FA873F 
+                    background-color: rgba(255, 222, 201, 0.85)  
+                    background-image: url('../img/b-services/list/dots-rose.svg')
+                .b-services-list__more 
+                    color: #FA873F 
+                    &::after 
+                        background-color: #FA873F  
+                .b-services-list__hover 
+                    border-color: #FA873F
+                
+                
+            &:nth-child(3),
+            &:nth-child(6),
+            &:nth-child(9),
+            &:nth-child(12),
+            &:nth-child(15),
+            &:nth-child(18),
+            &:nth-child(21)
+                .b-services-list__wrap 
+                    color: #fff 
+                    background-color: #02ADCC 
+                    background-image: url('../img/b-services/list/dots-blue.svg')
+                .b-services-list__more
+                    color: #02ADCC
+                    &::after 
+                        background-color: #02ADCC
+                .b-services-list__hover
+                    border-color: #ACEAF4
+                
