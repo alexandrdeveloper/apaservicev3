@@ -4614,7 +4614,8 @@ footer {
             -webkit-box-align: start;
             -webkit-align-items: flex-start;
                 -ms-flex-align: start;
-                    align-items: flex-start; }
+                    align-items: flex-start;
+            height: 238px; }
             .b-content-hero__info_services span {
               padding-top: 0;
               padding-bottom: 0;
@@ -4761,13 +4762,37 @@ footer {
       bottom: -34px; } }
   @media screen and (max-width: 576px) {
     .b-content-hero-dots {
-      left: 0; } }
+      left: 0; }
+      .b-content-hero-dots_services {
+        display: none; } }
+
+@media screen and (max-width: 576px) {
+  .b-content-hero__info_services {
+    position: relative; }
+    .b-content-hero__info_services::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 107px;
+      height: 83px;
+      background-image: url("../img/b-content/dots.svg");
+      background-size: 100% auto;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 2; } }
 
 @media screen and (max-width: 576px) {
   .b-content-hero__info_services h1 span {
     padding: 2px 7px !important;
     line-height: 1;
     height: 25px; } }
+
+@media screen and (max-width: 576px) {
+  .b-content-hero__info_services .b-content-hero__more {
+    z-index: 10; } }
 
 /***** Стили Контент КОНЕЦ *****/
 /***** Стили Блог НАЧАЛО *****/
@@ -5125,7 +5150,11 @@ footer {
             transform: translateX(0px);
     -webkit-transition: .3s ease-out;
     -o-transition: .3s ease-out;
-    transition: .3s ease-out; }
+    transition: .3s ease-out;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden; }
 
 .b-services-list__hover {
   position: absolute;
@@ -5150,7 +5179,7 @@ footer {
   text-transform: uppercase;
   color: #02ADCC;
   font-size: 16px;
-  font-family: 'RobotoRegular', sans-serif;
+  font-family: 'RobotoBold', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
   opacity: 0;
@@ -5178,7 +5207,7 @@ footer {
           -ms-transform: translateX(20px);
               transform: translateX(20px);
       opacity: 0; }
-  .b-services-list__box:hover .b-services-list__hover {
+  .b-services-list__box:hover .b-services-list__hover:hover {
     border-color: #02ADCC; }
   .b-services-list__box:hover .b-services-list__more {
     opacity: 1; }
@@ -5193,7 +5222,7 @@ footer {
   .b-services-list__item:nth-child(2) .b-services-list__more::after, .b-services-list__item:nth-child(5) .b-services-list__more::after, .b-services-list__item:nth-child(8) .b-services-list__more::after, .b-services-list__item:nth-child(11) .b-services-list__more::after, .b-services-list__item:nth-child(14) .b-services-list__more::after, .b-services-list__item:nth-child(17) .b-services-list__more::after, .b-services-list__item:nth-child(20) .b-services-list__more::after {
     background-color: #FA873F; }
 
-.b-services-list__item:nth-child(2) .b-services-list__hover, .b-services-list__item:nth-child(5) .b-services-list__hover, .b-services-list__item:nth-child(8) .b-services-list__hover, .b-services-list__item:nth-child(11) .b-services-list__hover, .b-services-list__item:nth-child(14) .b-services-list__hover, .b-services-list__item:nth-child(17) .b-services-list__hover, .b-services-list__item:nth-child(20) .b-services-list__hover {
+.b-services-list__item:nth-child(2) .b-services-list__hover:hover, .b-services-list__item:nth-child(5) .b-services-list__hover:hover, .b-services-list__item:nth-child(8) .b-services-list__hover:hover, .b-services-list__item:nth-child(11) .b-services-list__hover:hover, .b-services-list__item:nth-child(14) .b-services-list__hover:hover, .b-services-list__item:nth-child(17) .b-services-list__hover:hover, .b-services-list__item:nth-child(20) .b-services-list__hover:hover {
   border-color: #FA873F; }
 
 .b-services-list__item:nth-child(3) .b-services-list__wrap, .b-services-list__item:nth-child(6) .b-services-list__wrap, .b-services-list__item:nth-child(9) .b-services-list__wrap, .b-services-list__item:nth-child(12) .b-services-list__wrap, .b-services-list__item:nth-child(15) .b-services-list__wrap, .b-services-list__item:nth-child(18) .b-services-list__wrap, .b-services-list__item:nth-child(21) .b-services-list__wrap {
@@ -5206,8 +5235,8 @@ footer {
   .b-services-list__item:nth-child(3) .b-services-list__more::after, .b-services-list__item:nth-child(6) .b-services-list__more::after, .b-services-list__item:nth-child(9) .b-services-list__more::after, .b-services-list__item:nth-child(12) .b-services-list__more::after, .b-services-list__item:nth-child(15) .b-services-list__more::after, .b-services-list__item:nth-child(18) .b-services-list__more::after, .b-services-list__item:nth-child(21) .b-services-list__more::after {
     background-color: #02ADCC; }
 
-.b-services-list__item:nth-child(3) .b-services-list__hover, .b-services-list__item:nth-child(6) .b-services-list__hover, .b-services-list__item:nth-child(9) .b-services-list__hover, .b-services-list__item:nth-child(12) .b-services-list__hover, .b-services-list__item:nth-child(15) .b-services-list__hover, .b-services-list__item:nth-child(18) .b-services-list__hover, .b-services-list__item:nth-child(21) .b-services-list__hover {
-  border-color: #ACEAF4; }
+.b-services-list__item:nth-child(3) .b-services-list__hover:hover, .b-services-list__item:nth-child(6) .b-services-list__hover:hover, .b-services-list__item:nth-child(9) .b-services-list__hover:hover, .b-services-list__item:nth-child(12) .b-services-list__hover:hover, .b-services-list__item:nth-child(15) .b-services-list__hover:hover, .b-services-list__item:nth-child(18) .b-services-list__hover:hover, .b-services-list__item:nth-child(21) .b-services-list__hover:hover {
+  border-color: #02ADCC; }
 
 /***** Стили Услуги КОНЕЦ *****/
 /***** Стили Updates НАЧАЛО *****/
@@ -5290,6 +5319,9 @@ footer {
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start; } }
+
+.section__slug span {
+  text-transform: none; }
 
 /***** Стили Updates КОНЕЦ *****/
 /************************* Обновления **************************/
