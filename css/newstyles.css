@@ -286,6 +286,11 @@ button {
       @media screen and (max-width: 1199px) {
         .b-breadcrumbs-list a, .b-breadcrumbs-list span {
           font-size: 17px; } }
+      @media screen and (max-width: 576px) {
+        .b-breadcrumbs-list a, .b-breadcrumbs-list span {
+          font-size: 12px;
+          margin-right: 8px;
+          white-space: nowrap; } }
     .b-breadcrumbs-list a {
       color: #404040;
       -webkit-transition: .3s ease-out;
