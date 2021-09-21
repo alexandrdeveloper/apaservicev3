@@ -5399,6 +5399,18 @@ footer {
 .b-menu__list {
   margin-top: 0; }
 
+.section__head-link {
+  white-space: nowrap; }
+
+@media screen and (max-width: 769px) {
+  .b-content-hero__video {
+    width: 100%;
+    max-width: 100%; } }
+
+@media screen and (max-width: 769px) {
+  .b-content-hero__info {
+    display: none; } }
+
 /***** Стили Updates КОНЕЦ *****/
 /***** Стили Updates НАЧАЛО *****/
 @media screen and (max-width: 767px) and (min-width: 576px) {
@@ -5507,6 +5519,18 @@ footer {
 
 .b-menu__list {
   margin-top: 0; }
+
+.section__head-link {
+  white-space: nowrap; }
+
+@media screen and (max-width: 769px) {
+  .b-content-hero__video {
+    width: 100%;
+    max-width: 100%; } }
+
+@media screen and (max-width: 769px) {
+  .b-content-hero__info {
+    display: none; } }
 
 /***** Стили Updates КОНЕЦ *****/
 /***** Стили Общие дефолтной страницы НАЧАЛО *****/
@@ -5957,9 +5981,7 @@ footer {
   padding-top: 39px;
   position: relative; }
   .p-price-icon__item {
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto; }
+    margin-bottom: 30px; }
     @media screen and (max-width: 991px) {
       .p-price-icon__item {
         margin-left: 0;
@@ -6225,12 +6247,21 @@ footer {
   .p-banner .col-12 {
     padding-left: 15px;
     padding-right: 15px; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .p-banner .b-content-hero::after {
       content: '';
       display: block;
       width: 100%;
       padding-top: 42%; } }
+
+@media screen and (max-width: 768px) {
+  .b-content-hero__video {
+    width: 100%;
+    max-width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .b-content-hero__info {
+    display: none; } }
 
 .video-play {
   position: absolute;
@@ -6497,8 +6528,9 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding-left: 0;
-    font-family: 'RalewayRegular', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+    font-family: 'RobotoRegular', sans-serif;
+    font-weight: 400;
     line-height: 1.3; }
     @media screen and (max-width: 1200px) {
       .p-article-list ul {
@@ -6540,16 +6572,18 @@ footer {
   @media screen and (max-width: 1200px) {
     .p-accordeon {
       padding-bottom: 30px; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .p-accordeon {
       padding-bottom: 10px; } }
   .p-accordeon .accordeon {
     padding-left: 0;
     padding-right: 30px;
     background: #fff; }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       .p-accordeon .accordeon {
-        padding-right: 0; } }
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto; } }
   .p-accordeon__content {
     position: relative;
     z-index: 10;
@@ -6557,7 +6591,7 @@ footer {
     @media screen and (max-width: 1200px) {
       .p-accordeon__content {
         margin-bottom: 25px; } }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       .p-accordeon__content {
         margin-bottom: 15px; } }
     @media screen and (max-width: 576px) {
@@ -6571,13 +6605,13 @@ footer {
     width: 100%;
     max-width: 767px;
     background-size: 100% auto;
-    background-position: center bottom;
+    background-position: center top;
     background-repeat: no-repeat;
     z-index: -1; }
     @media screen and (max-width: 1400px) {
       .p-accordeon__bg {
         width: 45%; } }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       .p-accordeon__bg {
         display: none; } }
   .p-accordeon__text {
@@ -6589,7 +6623,7 @@ footer {
       padding-top: 10px;
       padding-bottom: 10px;
       font-size: 17px; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .p-accordeon .accordeon__title {
       font-size: 15px; } }
   @media screen and (max-width: 1200px) {
@@ -6597,7 +6631,7 @@ footer {
       padding-bottom: 10px; }
       .p-accordeon .accordeon__info p {
         font-size: 17px; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .p-accordeon .accordeon__info p {
       font-size: 15px; } }
 
